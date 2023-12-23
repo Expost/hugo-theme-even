@@ -22,7 +22,7 @@
           <span id="busuanzi_container_page_pv" class="more-meta"> {{ printf (T "pagePV") $valueSpan | safeHTML }} </span>
         {{- end }}
         {{- if and .Site.Params.twikoo.enable .Site.Params.twikoo.visitor }}
-          <span class="more-meta" id="twikoo_visitors">0</span>
+          <span class="more-meta" id="twikoo_visitors">0</span><span> {{ printf (T "pagePV") }} </span>
         {{- end }}
       </div>
     </header>
