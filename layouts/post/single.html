@@ -22,8 +22,8 @@
           <span id="busuanzi_container_page_pv" class="more-meta"> {{ printf (T "pagePV") $valueSpan | safeHTML }} </span>
         {{- end }}
         {{- if and .Site.Params.twikoo.enable .Site.Params.twikoo.visitor }}
-        {{ $valueSpan := printf `<span id="twikoo_visitors"><img src="%s" alt="spinner.svg"/>0</span>` ("img/spinner.svg" | relURL) -}}
-        <span id="busuanzi_container_page_pv" class="more-meta"> {{ printf (T "pagePV") $valueSpan | safeHTML }} </span>
+        {{ $valueSpan := `<span id="twikoo_visitors">0</span>` -}}
+        <span class="more-meta"> {{ printf (T "pagePV") $valueSpan | safeHTML }} </span>
         {{- end }}
       </div>
     </header>
