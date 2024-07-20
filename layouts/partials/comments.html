@@ -138,7 +138,7 @@
   <!-- twikoo -->
   {{- if .Site.Params.twikoo.enable}}
   <div id="tcomment"></div>
-  <script src="https://cdn.staticfile.org/twikoo/{{ .Site.Params.twikoo.version }}/twikoo.all.min.js"></script>
+  <script src="https://s4.zstatic.net/ajax/libs/twikoo/{{ .Site.Params.twikoo.version }}/twikoo.all.min.js"></script>
   <script>
     twikoo.init({
       envId: '{{ .Site.Params.twikoo.env }}', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
